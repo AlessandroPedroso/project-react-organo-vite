@@ -1,3 +1,4 @@
+import Botao from '../Botao/index.jsx'
 import CampoTexto from '../CampoTexto/index.jsx'
 import ListaSuspensa from '../ListaSuspensa/index.jsx'
 import { Section, Form,H2} from './styleFormulario.js'
@@ -20,6 +21,9 @@ export const Formulario = () => {
                 <CampoTexto label="Cargo" placeholder="Digite seu cargo" />
                 <CampoTexto label="Imagem" placeholder="Informe o endereço da imagem" />
                 <ListaSuspensa label="Times" itens={times}/>
+                <Botao>
+                    Criar Card
+                </Botao>
             </Form>
         </Section>
     )

@@ -33,5 +33,6 @@ export const Select = styled.select`
     color:#AFAFAF;
     border:none;
     outline: none;
+    padding: 24px;
 
 `
