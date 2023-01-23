@@ -12,6 +12,7 @@ export const LabelTexto = styled.label`
     margin-bottom: 8px;
     font-weight: 600;
     font-size: 18px;
+    font-family: 'Montserrat';
 `
 
 export const Input = styled.input`
@@ -25,7 +26,12 @@ export const Input = styled.input`
     font-size:24px;
     padding: 24px;
     outline: none;
+    font-weight: 400;
+    font-family: 'Montserrat';
     &::placeholder{
         font-size: 16px;
+        font-family: 'Montserrat';
+        font-weight: 400;
+        color: #A4A4A4;
     }
 `
