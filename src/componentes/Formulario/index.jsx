@@ -4,7 +4,7 @@ import CampoTexto from '../CampoTexto/index.jsx'
 import ListaSuspensa from '../ListaSuspensa/index.jsx'
 import { Section, Form,H2} from './styleFormulario.js'
 
-export const Formulario = () => {
+export const Formulario = (props) => {
 
     const [nome,setNome] = useState('')
     const [cargo,setCargo] = useState('')
@@ -23,7 +23,8 @@ export const Formulario = () => {
 
     const aoSalvar = (evento) =>{
         evento.preventDefault()
-        console.log('Form foi submetido =>',nome,cargo,imagem,time)
+        props.aoColaboradorCadastrado({nome,cargo,imagem,time})
+        // console.log('Form foi submetido =>',nome,cargo,imagem,time)
     }
 
     return (
