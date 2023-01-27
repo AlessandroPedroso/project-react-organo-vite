@@ -3,8 +3,6 @@ import {Times,Label,Select} from './styleListaSuspensa.js'
 
 const ListaSuspensa = (props) =>{
 
-
-
     return (
         <Times>
             <Label>{props.label}</Label>

@@ -11,19 +11,13 @@ export const Formulario = (props) => {
     const [imagem,setImagem] = useState('')
     const [time,setTime] = useState('')
 
-    const times = [
-        'Programação',
-        'Front-End',
-        'Data Science',
-        'Devops',
-        'UX e Design',
-        'Mobile',
-        'Inovação e Gestão'
-    ]
-
     const aoSalvar = (evento) =>{
         evento.preventDefault()
         props.aoColaboradorCadastrado({nome,cargo,imagem,time})
+        setNome('')
+        setCargo('')
+        setImagem('')
+        setTime('')
         // console.log('Form foi submetido =>',nome,cargo,imagem,time)
     }
 
@@ -57,7 +51,7 @@ export const Formulario = (props) => {
                 <ListaSuspensa
                     obrigatorio={true} 
                     label="Times" 
-                    itens={times}
+                    itens={props.nomeDosTimes}
                     valor={time}
                     aaAlterado={valor => setTime(valor)}
                     

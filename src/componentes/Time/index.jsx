@@ -1,15 +1,20 @@
-import {H3,SectionTime} from './StyleTime.js'
+import Colaborador from '../Colaborador/index.jsx'
+import { H3, SectionTime, DivColaboradores } from './StyleTime.js'
 
 
-const Time = (props) =>{
-    
+const Time = (props) => {
+
     return (
-        <SectionTime>
-            
-            <H3>{props.nome}</H3>
+
+       (props.colaboradores.length > 0) ? <SectionTime corSecundaria={props.corSecundaria} >
+
+            <H3 corPrimaria={props.corPrimaria}>{props.nome}</H3>
+            <DivColaboradores>
+                {props.colaboradores.map(colaborador => <Colaborador imagem={colaborador.imagem} nome={colaborador.nome} cargo={colaborador.cargo} />)}
+            </DivColaboradores>
 
         </SectionTime>
-
+        : ''
     )
 }
 

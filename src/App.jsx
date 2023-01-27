@@ -56,14 +56,10 @@ function App() {
 
     <div>
       <Banner />
-      <Formulario aoColaboradorCadastrado={colaborador => aoNovoColaboradorAdicionado(colaborador)} />
-      <Time nome="Programação"/>
-      <Time nome="Front-End"/>
-      <Time nome="Data Science"/>
-      <Time nome="Devops"/>
-      <Time nome="UX e Design"/>
-      <Time nome="Mobile"/>
-      <Time nome="Inovação e Gestão"/>
+      <Formulario nomeDosTimes={times.map(time => time.nome)} aoColaboradorCadastrado={colaborador => aoNovoColaboradorAdicionado(colaborador)} />
+
+      {times.map(time =>  <Time key={time.nome} nome={time.nome} corPrimaria={time.corPrimaria} corSecundaria={time.corSecundaria} colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)} />)}
+     
     </div>
 
   )
