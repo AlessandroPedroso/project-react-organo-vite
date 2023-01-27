@@ -4,7 +4,7 @@ function Banner() {
 
     return (
         <Header>
-            <Imagem src="./assets/banner.png" alt="O banner principal da página do Organo" />
+            <Imagem src="./banner.png" alt="O banner principal da página do Organo" />
         </Header>
     )
 
