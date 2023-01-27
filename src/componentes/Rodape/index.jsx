@@ -33,7 +33,7 @@ const Rodape = () =>{
 
             <section>
                 <P>
-                    Desenvolvido por Alura.
+                    Desenvolvido por Alessandro Pedroso.
                 </P>
             </section>
 

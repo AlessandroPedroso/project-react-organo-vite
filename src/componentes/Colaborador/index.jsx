@@ -1,10 +1,10 @@
 import {ColaboradorStyle, ColaboradorCabecalho, IMG, Rodape, H4, H5} from './styleColaborador.js'
 
-const Colaborador = ({imagem,nome,cargo})=>{
+const Colaborador = ({imagem,nome,cargo,corDeFundo})=>{
 
     return (
         <ColaboradorStyle>
-            <ColaboradorCabecalho>
+            <ColaboradorCabecalho corDeFundo={corDeFundo}>
                 <IMG src={imagem} alt={nome} />
             </ColaboradorCabecalho>
             <Rodape>

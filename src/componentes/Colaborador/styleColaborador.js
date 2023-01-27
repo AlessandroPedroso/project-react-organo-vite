@@ -8,7 +8,7 @@ export const ColaboradorStyle = styled.div`
 
 export const ColaboradorCabecalho = styled.div`
 
-    background-color:  #F0F0F0;
+    background-color:  ${props => props.corDeFundo};
     border-radius: 10px 10px 0px 0px;
 
 `
