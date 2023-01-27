@@ -9,26 +9,26 @@ const Rodape = () =>{
                 <Ul>
                     <li>
                         <a href='facebook.com' target="_blank">
-                            <img src="./src/assets/fb.png" alt="facebook"/>
+                            <img src="./assets/fb.png" alt="facebook"/>
                         </a>
                     </li>
 
                     <li>
                         <a href="twitter.com" target="_blank">
-                            <img src="./src/assets/tw.png" alt="twitter"/>
+                            <img src="./assets/tw.png" alt="twitter"/>
                         </a>
                     </li>
 
                     <li>
                         <a href="instagram.com" target="_blank">
-                            <img src="./src/assets/ig.png" alt="instagram"/>
+                            <img src="./assets/ig.png" alt="instagram"/>
                         </a>
                     </li>
                 </Ul>
             </section>
 
             <section>
-                <img src="./src/assets/logo.png" alt="logo" />
+                <img src="./assets/logo.png" alt="logo" />
             </section>
 
             <section>
